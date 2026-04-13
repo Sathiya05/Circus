@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - Emerald Circus</title>
+    <link rel="icon" href="images/logo.jpeg">
+    <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* RTL */
+        .rtl {
+            direction: rtl;
+        }
+
+        /* THEME TOGGLE */
+        :root {
+            --home-bg: #ffffff;
+            --text-color: #111111;
+        }
+
+        [data-theme="dark"] {
+            --home-bg: #000000;
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--home-bg) !important;
+            color: var(--text-color);
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        [data-theme="dark"] section,
+        [data-theme="dark"] section .bg-white,
+        [data-theme="dark"] .card {
+            background-color: #000000 !important;
+        }
+
+        [data-theme="dark"] .bg-gradient-to-r {
+            --tw-gradient-from: #000000 !important;
+        }
+
+        [data-theme="dark"] .btn,
+        [data-theme="dark"] .btn1:hover {
+            color: #000000 !important;
+        }
+
+        [data-theme="dark"] .title {
+            color: #ffffff !important;
+        }
+
+        [data-theme="dark"] body,
+        [data-theme="dark"] p,
+        [data-theme="dark"] h1,
+        [data-theme="dark"] h2,
+        [data-theme="dark"] h3,
+        [data-theme="dark"] h4,
+        [data-theme="dark"] h5,
+        [data-theme="dark"] h6,
+        [data-theme="dark"] span,
+        [data-theme="dark"] li,
+        [data-theme="dark"] a,
+        [data-theme="dark"] label,
+        [data-theme="dark"] small,
+        [data-theme="dark"] strong {
+            color: #ffffff !important;
+        }
+        @media (max-width:400px){
+            .title1{
+                margin-top: 40px;
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600 !important;
+        }
+          @keyframes ping-slow {
+        75%, 100% {
+            transform: scale(2.2);
+            opacity: 0;
+        }
+    }
+    .animate-ping-slow {
+        animation: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- navbar -->
+    <div id="navbar"></div>
+
+    <!-- HERO BANNER -->
+<section class="relative h-[50vh] md:h-[60vh] flex items-center justify-center text-center overflow-hidden">
+
+  <!-- Background Image -->
+  <img src="images/bg4.webp"
+       alt="Service"
+       class="absolute inset-0 w-full h-full object-cover">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 px-6 max-w-3xl text-white">
+
+    <!-- Heading -->
+    <h1 id="service-title"
+        class="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-4">
+        Premium <span class="text-[#10B981]">Service</span>
+    </h1>
+
+    <!-- Description -->
+    <p id="service-desc"
+       class="text-gray-200 text-sm md:text-base mb-6">
+       We provide high-quality entertainment services tailored to your event needs.
+    </p>
+
+    <!-- CTA -->
+    <a href="contact.html"
+       class="inline-block bg-[#10B981] px-7 py-3 text-xs font-bold uppercase tracking-widest hover:bg-[#FFD60A] hover:text-black transition">
+      Book Now
+    </a>
+
+  </div>
+
+</section>
+<!-- SECTION1 -->
+ <!-- ALL SERVICES DETAILS -->
+<section class="py-24 bg-white">
+  <div class="max-w-[1200px] mx-auto px-6 space-y-20">
+
+    <!-- SERVICE 1 -->
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <img src="images/bg1.avif"
+           class="w-full h-[350px] object-cover rounded-xl shadow">
+
+      <div>
+        <h2 class="text-3xl font-black mb-4">Clown Performers</h2>
+        <p class="text-gray-500 mb-4">
+          Clown performers bring energy, humor, and interactive entertainment to events.
+          Their acts include comedy, juggling, balloon art, and audience engagement,
+          making them perfect for family-friendly environments.
+        </p>
+
+        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+          <li>✔ Interactive entertainment</li>
+          <li>✔ Comedy & fun activities</li>
+          <li>✔ Custom themes available</li>
+          <li>✔ Perfect for kids & families</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- SERVICE 2 -->
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <div>
+        <h2 class="text-3xl font-black mb-4">Aerial Artists</h2>
+        <p class="text-gray-500 mb-4">
+          Aerial artists perform breathtaking routines using silks, hoops, and ropes.
+          These performances combine strength, grace, and choreography to create
+          stunning visual experiences.
+        </p>
+
+        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+          <li>✔ Elegant performances</li>
+          <li>✔ High visual impact</li>
+          <li>✔ Professional safety setup</li>
+          <li>✔ Ideal for luxury events</li>
+        </ul>
+      </div>
+
+      <img src="images/pic7.jpg"
+           class="w-full h-[350px] object-cover rounded-xl shadow">
+
+    </div>
+
+    <!-- SERVICE 3 -->
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <img src="images/pic8.webp"
+           class="w-full h-[350px] object-cover rounded-xl shadow">
+
+      <div>
+        <h2 class="text-3xl font-black mb-4">Fire Performers</h2>
+        <p class="text-gray-500 mb-4">
+          Fire performers deliver high-energy shows using fire props such as torches
+          and staffs. These performances create a thrilling atmosphere, especially
+          during night events.
+        </p>
+
+        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+          <li>✔ High-energy shows</li>
+          <li>✔ Night event specialty</li>
+          <li>✔ Safe fire techniques</li>
+          <li>✔ Custom routines available</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- SERVICE 4 -->
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <div>
+        <h2 class="text-3xl font-black mb-4">Magicians</h2>
+        <p class="text-gray-500 mb-4">
+          Professional magicians perform illusions and interactive tricks that amaze
+          audiences. Their performances can be stage-based or close-up magic.
+        </p>
+
+        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+          <li>✔ Interactive magic</li>
+          <li>✔ Stage & close-up options</li>
+          <li>✔ Audience engagement</li>
+          <li>✔ Suitable for all events</li>
+        </ul>
+      </div>
+
+      <img src="images/pic4.avif"
+           class="w-full h-[350px] object-cover rounded-xl shadow">
+
+    </div>
+
+  </div>
+</section>
+<!-- SECTION2 -->
+ <!-- PRICING SECTION -->
+<section class="py-24 bg-gray-50">
+  <div class="max-w-[1200px] mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-4">
+      Pricing <span class="text-[#10B981]">Packages</span>
+    </h2>
+    <p class="text-gray-400 mb-16 text-sm">
+      Flexible packages tailored to your event needs.
+    </p>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- BASIC -->
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+
+        <h3 class="text-xl font-bold mb-4">Basic</h3>
+        <p class="text-4xl font-black mb-6">₹5,000</p>
+
+        <ul class="text-sm text-gray-600 space-y-3 mb-8">
+          <li>✔ 1 Performer</li>
+          <li>✔ 30 Minutes Show</li>
+          <li>✔ Basic Setup</li>
+          <li>✔ Small Events</li>
+        </ul>
+
+        <a href="contact.html"
+           class="block bg-[#10B981] text-white py-3 text-xs font-bold uppercase hover:bg-black transition">
+          Book Now
+        </a>
+
+      </div>
+
+      <!-- STANDARD -->
+      <div class="bg-[#10B981] text-white p-8 rounded-xl shadow-lg scale-105">
+
+        <h3 class="text-xl font-bold mb-4">Standard</h3>
+        <p class="text-4xl font-black mb-6">₹10,000</p>
+
+        <ul class="text-sm space-y-3 mb-8">
+          <li>✔ 2 Performers</li>
+          <li>✔ 1 Hour Show</li>
+          <li>✔ Stage Setup</li>
+          <li>✔ Medium Events</li>
+        </ul>
+
+        <a href="contact.html"
+           class="block bg-white text-black py-3 text-xs font-bold uppercase hover:bg-[#FFD60A] transition">
+          Book Now
+        </a>
+
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+
+        <h3 class="text-xl font-bold mb-4">Premium</h3>
+        <p class="text-4xl font-black mb-6">₹20,000</p>
+
+        <ul class="text-sm text-gray-600 space-y-3 mb-8">
+          <li>✔ 4+ Performers</li>
+          <li>✔ 2 Hour Show</li>
+          <li>✔ Full Production</li>
+          <li>✔ Large Events</li>
+        </ul>
+
+        <a href="contact.html"
+           class="block bg-[#10B981] text-white py-3 text-xs font-bold uppercase hover:bg-black transition">
+          Book Now
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+               <!-- FOOTER -->
+    <div id="footer"></div>
+    <script>
+        tailwind.config = {
+            darkMode: ['selector', '[data-theme="dark"]'],
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+                    },
+                },
+            },
+        }
+        lucide.createIcons();
+    </script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-toggle {
+  display: none;
+}
+
+.nav-active {
+  color: #10B981 !important;
+  font-weight: 700;
+  position: relative;
+}
+
+.nav-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #10B981;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+[dir="rtl"] #profileMenu {
+  margin-right: -20px;
+}
+
+.home-active {
+  font-weight: 700 !important;
+  position: relative;
+}
+
+#navLinks .group ul a.nav-active::after,
+#mobileHomeDropdownMenu a.nav-active::after,
+#mainNavbar h1 a.nav-active::after,
+#mobileHomeDropdownBtn.nav-active::after,
+#navLinks .group > a.nav-active::after {
+  display: none !important;
+}
+
+[data-theme="dark"] #navLinks .group ul,
+[data-theme="dark"] #mobileHomeDropdownMenu,
+[data-theme="dark"] #profileMenu {
+  background-color: #1a1a1a !important;
+  border-color: #333 !important;
+}
+
+[data-theme="dark"] #navLinks .group ul a:hover,
+[data-theme="dark"] #profileMenu a:hover,
+[data-theme="dark"] #mobileMenu a:hover {
+  background-color: #333 !important;
+  color: #10B981 !important;
+}
+
+[data-theme="dark"] #mainNavbar,
+[data-theme="dark"] #mobileMenu,
+[data-theme="dark"] #mobileMenu .bg-gray-50 {
+  background-color: #1a1a1a !important;
+}
+
+@media (max-width: 1441px) {
+  [dir="rtl"] #profileMenu {
+    margin-right: -120px;
+  }
+}
+
+@media (max-width: 1281px) {
+  [dir="rtl"] #profileMenu {
+    margin-right: -150px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  #navLinks {
+    gap: 12px;
+  }
+
+  #navLinks a {
+    font-size: 9px;
+    letter-spacing: 0.05em;
+  }
+
+  #rightButtons {
+    gap: 0.4rem;
+  }
+
+  #rightButtons a {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 9px;
+  }
+
+  #mainNavbar h1 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  #centerLinksWrapper {
+    display: none !important;
+  }
+
+  #rightButtons {
+    display: none !important;
+  }
+
+  #rightButtons .text-xl,
+  #rightButtons .text-2xl {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hamburgerBtn {
+    display: none !important;
+  }
+
+  #mobileMenuOverlay,
+  #mobileMenu {
+    display: none !important;
+  }
+}
+
+.mobile-menu-open {
+  overflow: hidden;
+}
+
+#mobileMenu.active {
+  transform: translateX(0);
+}
+
+#mobileMenuOverlay.active {
+  display: block !important;
+}
+
+/* Animation for mobile dropdown */
+#mobileDropdownMenu {
+  transition: max-height 0.3s ease-out;
+}
+
+#mobileDropdownMenu.show {
+  display: block !important;
+  animation: slideDown 0.3s ease-out;
+}
+
+[dir="rtl"] #mobileProfileMenu {
+  margin-right: -120px;
+}
+
+#hamburgerBtn i {
+  color: #10B981;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  #centerLinksWrapper {
+    display: flex !important;
+  }
+
+  .lg\:flex {
+    display: flex !important;
+  }
+}
+
+@media (max-width:821px) {
+  .nav-active::after {
+    display: none;
+    font-weight: 900;
+  }
+}
+
+@media (max-width:426px) {
+
+  #theme-toggle i {
+    font-size: 15px;
+  }
+
+  #hamburgerBtn i {
+    font-size: 20px;
+    color: #10B981;
+  }
+
+  #closeMenuBtn {
+    font-size: 20px;
+  }
+
+  #rightButtons {
+    gap: 1rem;
+  }
+
+  [dir="rtl"] #mobileProfileMenu {
+    margin-right: -110px;
+  }
+}
+
+[data-theme="dark"] #homeDropdownMenu a,
+[data-theme="dark"] #dashboardDropdownMenu a,
+[data-theme="dark"] #profileMenu a,
+[data-theme="dark"] #mainNavbar i,
+[data-theme="dark"] #mainNavbar button,
+[data-theme="dark"] #mobileMenu i,
+[data-theme="dark"] #mobileMenu button,
+[data-theme="dark"] #mobileMenu button i,
+[data-theme="dark"] #mobileMenu ul {
+  color: white !important;
+}
+
+[data-theme="dark"] #mainNavbar .bg-white {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+[data-theme="dark"] #mobileMenu .bg-white,
+[data-theme="dark"] #mobileMenu .bg-gray-50 {
+  background-color: #1a1a1a !important;
+  border-color: #10B981 !important;
+}
+
+/* h1{
+  color:#10B981;
+color:#FFD60A;
+}  */

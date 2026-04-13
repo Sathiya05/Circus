@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home2 - Emerald Circus</title>
+    <link rel="icon" href="images/logo.jpeg">
+    <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* RTL */
+        .rtl {
+            direction: rtl;
+        }
+
+        /* THEME TOGGLE */
+        :root {
+            --home-bg: #ffffff;
+            --text-color: #111111;
+        }
+
+        [data-theme="dark"] {
+            --home-bg: #000000;
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--home-bg) !important;
+            color: var(--text-color);
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        [data-theme="dark"] section,
+        [data-theme="dark"] section .bg-white,
+        [data-theme="dark"] .card {
+            background-color: #000000 !important;
+        }
+
+        [data-theme="dark"] .bg-gradient-to-r {
+            --tw-gradient-from: #000000 !important;
+        }
+
+        [data-theme="dark"] .btn,
+        [data-theme="dark"] .btn1:hover {
+            color: #000000 !important;
+        }
+
+        [data-theme="dark"] .title {
+            color: #ffffff !important;
+        }
+
+        [data-theme="dark"] body,
+        [data-theme="dark"] p,
+        [data-theme="dark"] h1,
+        [data-theme="dark"] h2,
+        [data-theme="dark"] h3,
+        [data-theme="dark"] h4,
+        [data-theme="dark"] h5,
+        [data-theme="dark"] h6,
+        [data-theme="dark"] span,
+        [data-theme="dark"] li,
+        [data-theme="dark"] a,
+        [data-theme="dark"] label,
+        [data-theme="dark"] small,
+        [data-theme="dark"] strong {
+            color: #ffffff !important;
+        }
+        @media (max-width:400px){
+            .title1{
+                margin-top: 100px;
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600 !important;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- navbar -->
+    <div id="navbar"></div>
+
+    <!-- HERO BANNER -->
+<section class="relative min-h-screen bg-white flex items-center overflow-hidden">
+    
+    <div class="absolute top-1/2 left-0 -translate-y-1/2 select-none pointer-events-none opacity-[0.03] z-0">
+        <h1 class="text-[25vw] font-black uppercase leading-none tracking-tighter">
+            Emerald
+        </h1>
+    </div>
+
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12 w-full relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-6 xl:col-span-5">
+                
+                <h1 class="text-6xl md:text-[90px] font-semibold uppercase tracking-tighter leading-[0.9] text-gray-900 mb-10 mt-20">
+                    Artistry <br>
+                    <span class="text-gray-500">Without</span> <br>
+                    Limits.
+                </h1>
+                
+                <p class="text-gray-500 text-sm md:text-base font-medium leading-relaxed max-w-sm mb-12 tracking-wide">
+                    Curating world-class circus talent for the most prestigious stages on earth.
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-10">
+                    <a href="contact.html" class="bg-gray-900 text-white px-12 py-5 rounded-sm font-bold uppercase text-[11px] tracking-widest hover:bg-[#10B981] transition-all duration-500">
+                        Inquire Now
+                    </a>
+                    
+                    <a href="gallery.html" class="group flex items-center gap-3 text-gray-900 font-bold uppercase text-[10px] tracking-widest border-b-2 border-transparent hover:border-[#FFD60A] transition-all pb-1">
+                        View Acts
+                        <i class="bi bi-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 xl:col-span-7 relative">
+                <div class="relative w-full aspect-[4/5] md:aspect-video lg:aspect-[4/5] xl:aspect-[16/10] overflow-hidden">
+                    <img src="images/bg2.webp" 
+                         alt="Elite Circus Performance" 
+                         class="w-full h-full object-cover">
+                    
+                    <div class="absolute top-10 right-10 flex flex-col items-end gap-2">
+                        <span class="w-12 h-[1px] bg-white/50"></span>
+                        <p class="text-[9px] font-bold text-white uppercase tracking-[0.4em]">Current Feature</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- SECTION1 -->
+ <section class="py-24 bg-white">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+        
+        <div class="text-center max-w-2xl mx-auto mb-20">
+            <div class="flex items-center justify-center gap-3 mb-6">
+                <span class="w-10 h-[1px] bg-[#10B981]"></span>
+                <span class="text-[#10B981] text-[11px] font-bold uppercase tracking-[0.5em]">Capabilities</span>
+                <span class="w-10 h-[1px] bg-[#10B981]"></span>
+            </div>
+            <h2 class="text-4xl md:text-6xl font-semibold uppercase tracking-tighter text-gray-900 leading-tight">
+                Tailored <span class="text-gray-500">Solutions.</span>
+            </h2>
+            <p class="mt-6 text-gray-400 text-[10px] font-bold tracking-widest max-w-[300px] mx-auto leading-loose">
+                Integrated production management for events of global scale.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-gray-100 dark:border-white/10">
+            
+            <div class="group p-12 md:p-16 border-r border-b border-gray-100 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-all duration-500 text-center">
+                <div class="mb-10 text-gray-900 dark:text-gray-100 group-hover:text-[#10B981] transition-colors flex justify-center transform group-hover:-translate-y-1 duration-500">
+                    <i class="bi bi-bezier2 text-4xl"></i>
+                </div>
+                <h3 class="text-lg font-semibold uppercase tracking-tighter text-gray-900 mb-4">Talent Curation</h3>
+                <div class="w-8 h-[2px] bg-[#FFD60A] mb-6 mx-auto"></div>
+                <p class="text-[11px] text-gray-500 tracking-wide leading-loose font-medium">
+                    Bespoke selection of world-class artists tailored to your theme.
+                </p>
+            </div>
+
+            <div class="group p-12 md:p-16 border-r border-b border-gray-100 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-all duration-500 text-center">
+                <div class="mb-10 text-gray-900 dark:text-gray-100 group-hover:text-[#10B981] transition-colors flex justify-center transform group-hover:-translate-y-1 duration-500">
+                    <i class="bi bi-shield-check text-4xl"></i>
+                </div>
+                <h3 class="text-lg font-black uppercase tracking-tighter text-gray-900 mb-4">Technical Safety</h3>
+                <div class="w-8 h-[2px] bg-[#FFD60A] mb-6 mx-auto"></div>
+                <p class="text-[11px] text-gray-500 tracking-wide leading-loose font-medium">
+                    Bespoke selection of world-class artists tailored to your theme.
+                </p>
+            </div>
+
+            <div class="group p-12 md:p-16 border-r border-b border-gray-100 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-all duration-500 text-center">
+                <div class="mb-10 text-gray-900 dark:text-gray-100 group-hover:text-[#10B981] transition-colors flex justify-center transform group-hover:-translate-y-1 duration-500">
+                    <i class="bi bi-globe2 text-4xl"></i>
+                </div>
+                <h3 class="text-lg font-black uppercase tracking-tighter text-gray-900 mb-4">Tour Logistics</h3>
+                <div class="w-8 h-[2px] bg-[#FFD60A] mb-6 mx-auto"></div>
+                <p class="text-[11px] text-gray-500 tracking-wide leading-loose font-medium">
+                    Bespoke selection of world-class artists tailored to your theme.
+                </p>
+            </div>
+
+            <div class="group p-12 md:p-16 border-r border-b border-gray-100 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-all duration-500 text-center">
+                <div class="mb-10 text-gray-900 dark:text-gray-100 group-hover:text-[#10B981] transition-colors flex justify-center transform group-hover:-translate-y-1 duration-500">
+                    <i class="bi bi-lightbulb text-4xl"></i>
+                </div>
+                <h3 class="text-lg font-black uppercase tracking-tighter text-gray-900 mb-4">Creative Design</h3>
+                <div class="w-8 h-[2px] bg-[#FFD60A] mb-6 mx-auto"></div>
+                <p class="text-[11px] text-gray-500 tracking-wide leading-loose font-medium">
+                   Bespoke selection of world-class artists tailored to your theme.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- SECTION2 -->
+<section class="py-24 bg-gray-50 dark:bg-black">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-6xl font-semibold uppercase tracking-tighter">
+        Featured <span class="text-[#10B981]">Artists</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Card -->
+      <div class="group overflow-hidden rounded-xl bg-white dark:bg-white/5 border dark:border-white/10 shadow hover:shadow-xl transition">
+        <img src="images/img8.jpg" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Aerial Silk Performer</h3>
+          <p class="text-gray-500 text-sm mt-2">Graceful high-altitude acrobatics.</p>
+        </div>
+      </div>
+
+      <div class="group overflow-hidden rounded-xl bg-white dark:bg-white/5 border dark:border-white/10 shadow hover:shadow-xl transition">
+        <img src="images/img9.jpeg" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Fire Show Artist</h3>
+          <p class="text-gray-500 text-sm mt-2">High-energy fire performances.</p>
+        </div>
+      </div>
+
+      <div class="group overflow-hidden rounded-xl bg-white dark:bg-white/5 border dark:border-white/10 shadow hover:shadow-xl transition">
+        <img src="images/img10.webp" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Comedy Clown</h3>
+          <p class="text-gray-500 text-sm mt-2">Fun, laughter & engagement.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- SECTION3 -->
+ <!-- SECTION - WHY CHOOSE US (ADVANCED) -->
+<section class="py-24 bg-white">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-10 h-[2px] bg-[#10B981]"></span>
+          <span class="text-[#10B981] text-xs font-semibold tracking-[0.4em] uppercase">
+            Why Choose Us
+          </span>
+        </div>
+
+        <h2 class="text-4xl md:text-6xl font-semibold uppercase tracking-tighter leading-tight mb-8">
+          We Create <br>
+          <span class="text-gray-400">Unforgettable</span> <br>
+          Experiences.
+        </h2>
+
+        <p class="text-gray-500 leading-relaxed mb-10 max-w-md">
+          At Emerald Circus, we go beyond performances — we craft immersive experiences 
+          that captivate audiences, elevate brands, and turn events into unforgettable memories.
+        </p>
+
+        <a href="contact.html"
+           class="inline-block bg-[#10B981] text-white px-10 py-4 font-semibold uppercase text-xs tracking-widest hover:bg-black transition">
+          Book Your Event
+        </a>
+      </div>
+
+      <!-- RIGHT FEATURES -->
+      <div class="space-y-10">
+
+        <!-- ITEM -->
+        <div class="flex items-start gap-6 group">
+          <div class="w-14 h-14 flex items-center justify-center bg-[#10B981]/10 text-[#10B981] text-2xl rounded-lg group-hover:bg-[#10B981] group-hover:text-white transition">
+            <i class="bi bi-stars"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Elite Global Talent</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              We collaborate with internationally recognized performers, ensuring your event 
+              features world-class entertainment that stands out.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="flex items-start gap-6 group">
+          <div class="w-14 h-14 flex items-center justify-center bg-[#10B981]/10 text-[#10B981] text-2xl rounded-lg group-hover:bg-[#10B981] group-hover:text-white transition">
+            <i class="bi bi-palette"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Customized Experiences</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Every performance is tailored to match your event theme, brand identity, 
+              and audience expectations for maximum impact.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="flex items-start gap-6 group">
+          <div class="w-14 h-14 flex items-center justify-center bg-[#10B981]/10 text-[#10B981] text-2xl rounded-lg group-hover:bg-[#10B981] group-hover:text-white transition">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Safety & Reliability</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              We prioritize safety with strict compliance, professional rigging, and 
+              experienced crews to ensure flawless execution.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="flex items-start gap-6 group">
+          <div class="w-14 h-14 flex items-center justify-center bg-[#10B981]/10 text-[#10B981] text-2xl rounded-lg group-hover:bg-[#10B981] group-hover:text-white transition">
+            <i class="bi bi-gear"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">End-to-End Management</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              From planning and logistics to execution, we handle everything so you can 
+              focus on enjoying your event stress-free.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- SECTION4 -->
+<section class="py-24 bg-gray-50 dark:bg-black">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+
+    <!-- Heading -->
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-6xl font-semibold uppercase tracking-tighter">
+        Client <span class="text-[#10B981]">Voices</span>
+      </h2>
+      <p class="text-gray-400 mt-4 text-sm tracking-wide">
+        Trusted by event planners, brands, and global organizations.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- CARD -->
+      <div class="bg-white dark:bg-white/5 border dark:border-white/10 p-8 rounded-2xl shadow hover:shadow-xl transition duration-500">
+        <div class="flex items-center gap-1 text-[#FFD60A] mb-4">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">
+          “Absolutely stunning performance! The audience was mesmerized. 
+          Highly professional and seamless execution.”
+        </p>
+        <h4 class="font-semibold text-sm">Event Manager</h4>
+        <span class="text-xs text-gray-400">Corporate Gala, Dubai</span>
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-white dark:bg-white/5 border dark:border-white/10 p-8 rounded-2xl shadow hover:shadow-xl transition duration-500">
+        <div class="flex items-center gap-1 text-[#FFD60A] mb-4">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">
+          “Absolutely stunning performance! The audience was mesmerized. 
+          Highly professional and seamless execution.”
+        </p>
+        <h4 class="font-semibold text-sm">Wedding Planner</h4>
+        <span class="text-xs text-gray-400">Luxury Wedding, London</span>
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-white dark:bg-white/5 border dark:border-white/10 p-8 rounded-2xl shadow hover:shadow-xl transition duration-500">
+        <div class="flex items-center gap-1 text-[#FFD60A] mb-4">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">
+          “Absolutely stunning performance! The audience was mesmerized. 
+          Highly professional and seamless execution.”
+        </p>
+        <h4 class="font-semibold text-sm">Brand Director</h4>
+        <span class="text-xs text-gray-400">Product Launch Event</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!--SECTION5  -->
+<!-- SECTION 7 - STATS -->
+<section class="py-24 bg-[#10B981] text-white text-center">
+  <div class="max-w-[1200px] mx-auto px-6">
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+
+      <div>
+        <h3 class="text-4xl md:text-5xl font-semibold">500+</h3>
+        <p class="text-sm mt-2">Events Completed</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl md:text-5xl font-semibold">120+</h3>
+        <p class="text-sm mt-2">Global Artists</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl md:text-5xl font-semibold">50+</h3>
+        <p class="text-sm mt-2">Countries Served</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl md:text-5xl font-semibold">10+</h3>
+        <p class="text-sm mt-2">Years Experience</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- SECTION6 -->
+ <!-- SECTION 11 - BOOKING PROCESS -->
+<section class="py-24 bg-gray-50 dark:bg-black">
+  <div class="max-w-[1200px] mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-6xl font-semibold uppercase tracking-tighter mb-16">
+      How It <span class="text-[#10B981]">Works</span>
+    </h2>
+
+    <!-- Steps -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4  gap-10">
+
+      <!-- STEP 1 -->
+      <div class="relative group">
+        <div class="w-20 h-20 mx-auto flex items-center justify-center 
+                    bg-[#10B981]/10 text-[#10B981] text-3xl rounded-full 
+                    group-hover:bg-[#10B981] group-hover:text-white transition">
+          1
+        </div>
+        <h3 class="mt-6 font-semibold text-lg">Submit Inquiry</h3>
+        <p class="text-gray-500 text-sm mt-2">
+          Fill out the booking form with your event details.
+        </p>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="relative group">
+        <div class="w-20 h-20 mx-auto flex items-center justify-center 
+                    bg-[#10B981]/10 text-[#10B981] text-3xl rounded-full 
+                    group-hover:bg-[#10B981] group-hover:text-white transition">
+          2
+        </div>
+        <h3 class="mt-6 font-semibold text-lg">Choose Performers</h3>
+        <p class="text-gray-500 text-sm mt-2">
+          Fill out the booking form with your event details.
+        </p>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="relative group">
+        <div class="w-20 h-20 mx-auto flex items-center justify-center 
+                    bg-[#10B981]/10 text-[#10B981] text-3xl rounded-full 
+                    group-hover:bg-[#10B981] group-hover:text-white transition">
+          3
+        </div>
+        <h3 class="mt-6 font-semibold text-lg">Confirm Booking</h3>
+        <p class="text-gray-500 text-sm mt-2">
+          Fill out the booking form with your event details.
+        </p>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="relative group">
+        <div class="w-20 h-20 mx-auto flex items-center justify-center 
+                    bg-[#10B981]/10 text-[#10B981] text-3xl rounded-full 
+                    group-hover:bg-[#10B981] group-hover:text-white transition">
+          4
+        </div>
+        <h3 class="mt-6 font-semibold text-lg">Enjoy the Show</h3>
+        <p class="text-gray-500 text-sm mt-2">
+         Fill out the booking form with your event details.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+           <!-- FOOTER -->
+    <div id="footer"></div>
+    <script>
+        tailwind.config = {
+            darkMode: ['selector', '[data-theme="dark"]'],
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+                    },
+                },
+            },
+        }
+        lucide.createIcons();
+    </script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+</html>

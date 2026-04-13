@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Emerald Circus</title>
+  <link rel="icon" href="images/logo.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="tailwind.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    :root {
+      --home-bg: #F8FAFC; /* Slate-50 */
+      --text-color: #0F172A; /* Slate-900 */
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #0F172A; /* Deep Slate-900 */
+      --text-color: #F8FAFC;
+    }
+
+    [data-theme="dark"] .card {
+      background-color: #1E293B; /* Slate-800 */
+      border-color: #334155;
+    }
+    
+    [data-theme="dark"] .card1 {
+      background-color: #0F172A; 
+    }
+    
+    [data-theme="dark"] .title {
+      color: white;
+    }
+
+    /* Dark mode input styling */
+    [data-theme="dark"] input {
+      background-color: #334155;
+      border-color: #475569;
+      color: white;
+    }
+    
+    [data-theme="dark"] input::placeholder {
+      color: #94A3B8;
+    }
+
+    body {
+      background: var(--home-bg);
+      color: var(--text-color);
+      transition: background-color 0.4s, color 0.4s;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-sm sm:text-base">
+
+  <nav class="card w-full bg-white shadow-sm transition-colors duration-300 border-b border-gray-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <h1 class="text-xl sm:text-2xl tracking-tighter">
+      <a href="index.html" class="font-bold uppercase">
+        <span class="title text-black">EMERALD</span> <span class="title text-[#10B981]">CIRCUS</span>
+      </a>
+    </h1>
+      <div class="flex gap-3 sm:gap-4 text-xl">
+        <button id="rtlToggle" class="title w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg border border-gray-200 hover:border-[#10B981] hover:text-[#10B981] font-bold transition-all">
+        <i class="bi bi-globe2 text-base sm:text-lg"></i>
+      </button>
+        <button id="theme-toggle" class="title w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg border border-gray-200 hover:border-[#10B981] hover:text-[#10B981] transition-all">
+        <i class="bi bi-moon-stars text-base sm:text-lg"></i>
+      </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card1 min-h-[calc(100vh-64px)] bg-gray-50 flex justify-center items-center p-3 sm:p-4">
+  
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col items-stretch border border-gray-100">
+
+      <div class="card flex-1 w-full p-5 sm:p-6 flex flex-col justify-center bg-white relative">
+        
+        <div class="w-full">
+        
+          <div class="text-center mb-4 sm:mb-5">
+              <h2 class="title text-xl sm:text-2xl font-bold text-gray-900 mb-0.5">
+                Create Account
+              </h2>
+              <p class="text-gray-500 text-xs sm:text-sm">Join the agency network</p>
+          </div>
+
+          <form class="space-y-3">
+            
+            <div>
+              <label class="title block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Full Name</label>
+              <div class="relative">
+                <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400">
+                  <i class="bi bi-person"></i>
+                </span>
+                <input type="text" placeholder="John Doe"
+                  class="w-full py-2.5 px-3 pl-10 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#10B981]/20 focus:border-[#10B981] outline-none transition text-sm" required>
+              </div>
+            </div>
+
+            <div>
+              <label class="title block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Email Address</label>
+              <div class="relative">
+                <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400">
+                  <i class="bi bi-envelope"></i>
+                </span>
+                <input type="email" placeholder="agent@emeraldcircus.com"
+                  class="w-full py-2.5 px-3 pl-10 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#10B981]/20 focus:border-[#10B981] outline-none transition text-sm" required>
+              </div>
+            </div>
+
+            <div>
+              <label class="title block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Password</label>
+              <div class="relative w-full">
+                <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400">
+                  <i class="bi bi-lock"></i>
+                </span>
+                <input type="password" id="signupPassword" placeholder="••••••••"
+                  class="w-full py-2.5 px-3 pl-10 pr-10 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#10B981]/20 focus:border-[#10B981] outline-none transition text-sm" required>
+                <button type="button" onclick="togglePassword('signupPassword', this)" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#10B981] focus:outline-none transition-colors">
+                  <i class="bi bi-eye-slash"></i>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="title block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Confirm Password</label>
+              <div class="relative w-full">
+                <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400">
+                  <i class="bi bi-lock-check"></i>
+                </span>
+                <input type="password" id="confirmPassword" placeholder="••••••••"
+                  class="w-full py-2.5 px-3 pl-10 pr-10 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#10B981]/20 focus:border-[#10B981] outline-none transition text-sm" required>
+                <button type="button" onclick="togglePassword('confirmPassword', this)" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#10B981] focus:outline-none transition-colors">
+                  <i class="bi bi-eye-slash"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-center text-xs mt-1.5">
+              <input type="checkbox" id="terms" class="accent-[#10B981] w-3.5 h-3.5 cursor-pointer" required>
+              <label for="terms" class="title cursor-pointer text-gray-600 ml-2">
+                I agree to the <a href="#" class="text-[#10B981] hover:underline decoration-2 underline-offset-2">Terms & Privacy Policy</a>
+              </label>
+            </div>
+
+            <button
+              class="w-full bg-gray-900 text-white py-2.5 rounded-xl font-bold transition duration-300 hover:bg-[#10B981] mt-3 text-sm sm:text-base">
+              Sign Up
+            </button>
+          </form>
+        
+          <div class="my-4 flex items-center">
+            <hr class="flex-grow border-gray-100 dark:border-gray-600">
+            <span class="px-3 text-gray-400 text-xs font-medium">Or continue with</span>
+            <hr class="flex-grow border-gray-100 dark:border-gray-600">
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <button type="button" class="flex items-center justify-center gap-2 py-2 border border-gray-200 dark:border-gray-600 rounded-xl hover:border-[#10B981] hover:text-[#10B981] transition duration-300 title group text-xs sm:text-sm font-semibold text-gray-700">
+              <i class="bi bi-facebook text-base group-hover:text-[#10B981] transition-colors"></i> 
+              <span>Facebook</span>
+            </button>
+            <button type="button" class="flex items-center justify-center gap-2 py-2 border border-gray-200 dark:border-gray-600 rounded-xl hover:border-[#10B981] hover:text-[#10B981] transition duration-300 title group text-xs sm:text-sm font-semibold text-gray-700">
+              <i class="bi bi-google text-base group-hover:text-[#10B981] transition-colors"></i> 
+              <span>Google</span>
+            </button>
+          </div>
+
+          <p class="title mt-4 text-center text-xs sm:text-sm text-gray-600">
+            Already have an account?
+            <a href="login.html" class="text-[#10B981] font-bold hover:underline decoration-2 underline-offset-2 ml-1">
+              Login
+            </a>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // RTL Toggle
+    const rtlToggle = document.getElementById('rtlToggle');
+    rtlToggle.onclick = () => {
+      document.documentElement.dir =
+        document.documentElement.dir === "rtl" ? "ltr" : "rtl";
+    }
+
+    // Theme Toggle
+    const btn = document.getElementById("theme-toggle");
+    const saved = localStorage.getItem("theme");
+
+    if (saved) {
+      document.documentElement.dataset.theme = saved;
+      btn.innerHTML = saved === "dark"
+        ? '<i class="bi bi-sun-fill text-base sm:text-lg"></i>'
+        : '<i class="bi bi-moon-stars text-base sm:text-lg"></i>';
+    }
+
+    btn.onclick = () => {
+      let theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = theme;
+      localStorage.setItem("theme", theme);
+      btn.innerHTML = theme === "dark"
+        ? '<i class="bi bi-sun-fill text-base sm:text-lg"></i>'
+        : '<i class="bi bi-moon-stars text-base sm:text-lg"></i>';
+    }
+    
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    }
+    
+    // Toggle Password Visibility
+    function togglePassword(inputId, btn) {
+      const input = document.getElementById(inputId);
+      const icon = btn.querySelector('i');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.classList.remove('bi-eye-slash');
+        icon.classList.add('bi-eye');
+      } else {
+        input.type = 'password';
+        icon.classList.remove('bi-eye');
+        icon.classList.add('bi-eye-slash');
+      }
+    }
+  </script>
+
+</body>
+</html>

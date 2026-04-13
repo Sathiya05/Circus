@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performers - Emerald Circus</title>
+    <link rel="icon" href="images/logo.jpeg">
+    <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* RTL */
+        .rtl {
+            direction: rtl;
+        }
+
+        /* THEME TOGGLE */
+        :root {
+            --home-bg: #ffffff;
+            --text-color: #111111;
+        }
+
+        [data-theme="dark"] {
+            --home-bg: #000000;
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--home-bg) !important;
+            color: var(--text-color);
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        [data-theme="dark"] section,
+        [data-theme="dark"] section .bg-white,
+        [data-theme="dark"] .card {
+            background-color: #000000 !important;
+        }
+
+        [data-theme="dark"] .bg-gradient-to-r {
+            --tw-gradient-from: #000000 !important;
+        }
+
+        [data-theme="dark"] .btn,
+        [data-theme="dark"] .btn1:hover {
+            color: #000000 !important;
+        }
+
+        [data-theme="dark"] .title {
+            color: #ffffff !important;
+        }
+
+        [data-theme="dark"] body,
+        [data-theme="dark"] p,
+        [data-theme="dark"] h1,
+        [data-theme="dark"] h2,
+        [data-theme="dark"] h3,
+        [data-theme="dark"] h4,
+        [data-theme="dark"] h5,
+        [data-theme="dark"] h6,
+        [data-theme="dark"] span,
+        [data-theme="dark"] li,
+        [data-theme="dark"] a,
+        [data-theme="dark"] label,
+        [data-theme="dark"] small,
+        [data-theme="dark"] strong {
+            color: #ffffff !important;
+        }
+        @media (max-width:400px){
+            .title1{
+                margin-top: 40px;
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600 !important;
+        }
+        @keyframes slowZoom {
+  0% { transform: scale(1.1); }
+  100% { transform: scale(1.2); }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Animation Classes */
+.animate-slowZoom {
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1s ease forwards;
+}
+
+.animate-pulseSlow {
+  animation: pulseSlow 6s ease-in-out infinite;
+}
+
+/* Delay Utilities */
+.delay-100 { animation-delay: 0.2s; }
+.delay-200 { animation-delay: 0.4s; }
+.delay-300 { animation-delay: 0.6s; }
+.delay-500 { animation-delay: 0.8s; }
+    </style>
+    
+</head>
+
+<body class="font-sans">
+    <!-- navbar -->
+    <div id="navbar"></div>
+
+    <!-- HERO BANNER -->
+
+<section class="relative h-[75vh] md:h-[85vh] flex items-center justify-center text-center overflow-hidden">
+
+  <!-- Background Image -->
+  <img src="images/bg5.jpg"
+       alt="Performers"
+       class="absolute inset-0 w-full h-full object-cover scale-110 animate-slowZoom">
+
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/60"></div>
+
+  <!-- Glow Effect -->
+  <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-60 h-60 bg-[#10B981]/30 blur-[140px] rounded-full animate-pulseSlow"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-[800px] px-6 md:px-12 text-white space-y-6">
+
+    <!-- Tag -->
+    <span class="text-[#10B981] text-xs font-bold tracking-[0.4em] uppercase inline-block animate-fadeUp delay-100">
+      Our Performers
+    </span>
+
+    <!-- Heading -->
+    <h1 class="text-4xl md:text-6xl font-black uppercase leading-tight animate-fadeUp delay-200">
+      Talent That <br>
+      <span class="text-[#FFD60A]">Captivates</span>
+    </h1>
+
+    <!-- Description -->
+    <p class="text-gray-200 text-sm md:text-base leading-relaxed animate-fadeUp delay-300">
+      Meet our world-class performers who bring creativity, energy, and 
+      unforgettable experiences to every stage.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex justify-center gap-4 flex-wrap animate-fadeUp delay-500">
+
+      <a href="contact.html"
+         class="bg-[#10B981] px-7 py-3 text-xs font-bold uppercase tracking-widest 
+                hover:bg-black hover:scale-105 transition duration-300">
+        Book Performer
+      </a>
+
+      <a href="gallery.html"
+         class="btn1 border border-white px-7 py-3 text-xs font-bold uppercase tracking-widest 
+                hover:bg-white hover:text-black hover:scale-105 transition duration-300">
+        View Shows
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- SECTION1 -->
+ <section class="bg-white py-20">
+
+  <div class="max-w-[1200px] mx-auto px-6 md:px-12">
+
+    <!-- Heading -->
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-5xl font-black text-black uppercase mb-4">
+        Our Circus <span class="text-[#10B981]">Performers</span>
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Step into a world of wonder with our talented circus artists bringing magic, thrill, and excitement to every event.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Clown -->
+      <div class="group bg-white rounded-xl shadow-md hover:shadow-2xl transition overflow-hidden border-t-4 border-[#10B981]">
+
+        <div class="overflow-hidden">
+          <img src="images/image1.jpg"
+               class="w-full h-[380px] object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+
+          <span class="text-xs text-red-500 uppercase tracking-widest">
+            Clown
+          </span>
+
+          <h3 class="text-black text-xl font-bold mt-2">
+            Comedy Entertainer
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Bringing laughter and joy with fun-filled acts and engaging performances.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Fire Performer -->
+      <div class="group bg-white rounded-xl shadow-md hover:shadow-2xl transition overflow-hidden border-t-4 border-[#10B981]">
+
+        <div class="overflow-hidden">
+          <img src="images/image2.jpg"
+               class="w-full h-[380px] object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+
+          <span class="text-xs text-orange-500 uppercase tracking-widest">
+            Fire Artist
+          </span>
+
+          <h3 class="text-black text-xl font-bold mt-2">
+            Fire Show
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+           Bringing laughter and joy with fun-filled acts and engaging performances.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Aerial Artist -->
+      <div class="group bg-white rounded-xl shadow-md hover:shadow-2xl transition overflow-hidden border-t-4 border-[#10B981]">
+
+        <div class="overflow-hidden">
+          <img src="images/image3.jpg"
+               class="w-full h-[380px] object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+
+          <span class="text-xs text-purple-500 uppercase tracking-widest">
+            Aerial Artist
+          </span>
+
+          <h3 class="text-black text-xl font-bold mt-2">
+            Silk Acrobat
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+           Bringing laughter and joy with fun-filled acts and engaging performances.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Magician -->
+      <div class="group bg-white rounded-xl shadow-md hover:shadow-2xl transition overflow-hidden border-t-4 border-[#10B981]">
+
+        <div class="overflow-hidden">
+          <img src="images/image4.webp"
+               class="w-full h-[380px] object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+
+          <span class="text-xs text-blue-500 uppercase tracking-widest">
+            Magician
+          </span>
+
+          <h3 class="text-black text-xl font-bold mt-2">
+            Magic Show
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+           Bringing laughter and joy with fun-filled acts and engaging performances.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Acrobat -->
+      <div class="group bg-white rounded-xl shadow-md hover:shadow-2xl transition overflow-hidden border-t-4 border-[#10B981]">
+
+        <div class="overflow-hidden">
+          <img src="images/image5.jpg"
+               class="w-full h-[380px] object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+
+          <span class="text-xs text-green-500 uppercase tracking-widest">
+            Acrobat
+          </span>
+
+          <h3 class="text-black text-xl font-bold mt-2">
+            Stunt Performance
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Bringing laughter and joy with fun-filled acts and engaging performances.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Juggler -->
+      <div class="group bg-white rounded-xl shadow-md hover:shadow-2xl transition overflow-hidden border-t-4 border-[#10B981]">
+
+        <div class="overflow-hidden">
+          <img src="images/image6.webp"
+               class="w-full h-[380px] object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+
+          <span class="text-xs text-yellow-500 uppercase tracking-widest">
+            Juggler
+          </span>
+
+          <h3 class="text-black text-xl font-bold mt-2">
+            Juggling Act
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Bringing laughter and joy with fun-filled acts and engaging performances.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-16">
+      <a href="contact.html"
+         class="bg-[#10B981] text-white px-8 py-3 text-xs font-bold uppercase tracking-widest 
+                hover:bg-black transition">
+        Book Circus Performer
+      </a>
+    </div>
+
+  </div>
+
+</section>
+<!-- SECTION2 -->
+ <section class="bg-gray-50 py-20">
+
+  <div class="max-w-[1200px] mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- Image -->
+    <div class="relative group">
+      <img src="images/img2.webp"
+           class="w-full h-[500px] object-cover rounded-xl shadow-lg group-hover:scale-105 transition duration-500">
+
+      <!-- Glow -->
+      <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-[#10B981]/20 blur-[80px] rounded-full"></div>
+    </div>
+
+    <!-- Content -->
+    <div>
+
+      <span class="text-sm text-[#10B981] font-bold uppercase tracking-widest flex items-center gap-2">
+        <i class="fa-solid fa-star"></i>
+        Featured Performer
+      </span>
+
+      <h2 class="text-3xl md:text-5xl font-black text-black mt-4 leading-tight">
+        Fire Dance Spectacle
+      </h2>
+
+      <p class="text-gray-600 mt-6 leading-relaxed">
+        Experience the thrill of our top fire performer delivering breathtaking 
+        acts with flames, rhythm, and unmatched energy. Perfect for grand events, 
+        festivals, and night shows.
+      </p>
+
+      <!-- Highlights with Icons -->
+      <div class="mt-6 space-y-4 text-sm text-gray-700">
+
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-fire text-red-500 text-lg"></i>
+          <p>High-energy fire choreography</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-tents text-yellow-500 text-lg"></i>
+          <p>Suitable for all events</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-medal text-green-500 text-lg"></i>
+          <p>5+ years professional experience</p>
+        </div>
+
+      </div>
+
+      <!-- Buttons -->
+      <div class="mt-8 flex gap-4 flex-wrap">
+
+        <a href="contact.html"
+           class="bg-[#10B981] text-white px-8 py-3 text-xs font-bold uppercase tracking-widest 
+                  hover:bg-black transition flex items-center gap-2">
+          <i class="fa-solid fa-calendar-check"></i>
+          Book Now
+        </a>
+
+        <a href="gallery.html"
+           class="border border-black px-8 py-3 text-xs font-bold uppercase tracking-widest 
+                  hover:bg-black hover:text-white transition flex items-center gap-2">
+          <i class="fa-solid fa-play"></i>
+          Watch Show
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- SECTION3 -->
+ <section class="bg-white py-20">
+
+  <div class="max-w-[1200px] mx-auto px-6 md:px-12">
+
+    <!-- Heading -->
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-5xl font-black text-[#10B981] uppercase mb-4">
+        What Our Clients Say
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Real experiences from clients who loved our performers and events.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="card border border-white/50 bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+
+        <!-- Stars -->
+        <div class="text-yellow-400 mb-3">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-gray-600 text-sm leading-relaxed">
+          The fire show was absolutely stunning! Our guests were amazed and 
+          couldn’t stop talking about it. recommended!
+        </p>
+
+        <!-- User -->
+        <div class="flex items-center gap-3 mt-5">
+
+          <img src="images/team3.avif"
+               class="w-12 h-12 rounded-full object-cover">
+
+          <div>
+            <h4 class="text-black font-semibold text-sm">Ravi Kumar</h4>
+            <span class="text-gray-500 text-xs">Event Organizer</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card border border-white/50 bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+
+        <div class="text-yellow-400 mb-3">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-gray-600 text-sm leading-relaxed">
+          The clown performance was so entertaining for kids and adults alike. 
+          Great energy and very professional team!
+        </p>
+
+        <div class="flex items-center gap-3 mt-5">
+
+          <img src="images/team1.avif"
+               class="w-12 h-12 rounded-full object-cover">
+
+          <div>
+            <h4 class="text-black font-semibold text-sm">Priya Sharma</h4>
+            <span class="text-gray-500 text-xs">Birthday Event</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card border border-white/50 bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+
+        <div class="text-yellow-400 mb-3">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Amazing performers! The aerial act was breathtaking and added a wow 
+          factor to our corporate event.
+        </p>
+
+        <div class="flex items-center gap-3 mt-5">
+
+          <img src="images/team4.avif"
+               class="w-12 h-12 rounded-full object-cover">
+
+          <div>
+            <h4 class="text-black font-semibold text-sm">Arjun Mehta</h4>
+            <span class="text-gray-500 text-xs">Corporate Event</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+                 <!-- FOOTER -->
+    <div id="footer"></div>
+    <script>
+        tailwind.config = {
+            darkMode: ['selector', '[data-theme="dark"]'],
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+                    },
+                },
+            },
+        }
+        lucide.createIcons();
+    </script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+</html>
