@@ -41,6 +41,12 @@
         [data-theme="dark"] section .bg-white,
         [data-theme="dark"] .card {
             background-color: #000000 !important;
+            border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        }
+
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-100 {
+            border-color: rgba(255, 255, 255, 0.1) !important;
         }
 
         [data-theme="dark"] .bg-gradient-to-r {
@@ -64,7 +70,6 @@
         [data-theme="dark"] h4,
         [data-theme="dark"] h5,
         [data-theme="dark"] h6,
-        [data-theme="dark"] span,
         [data-theme="dark"] li,
         [data-theme="dark"] a,
         [data-theme="dark"] label,
@@ -166,13 +171,13 @@
     <div class="flex justify-center gap-4 flex-wrap animate-fadeUp delay-500">
 
       <a href="contact.html"
-         class="bg-[#10B981] px-7 py-3 text-xs font-bold uppercase tracking-widest 
+         class="bg-[#10B981] px-7 py-3 text-xs font-bold uppercase tracking-widest rounded-xl
                 hover:bg-black hover:scale-105 transition duration-300">
         Book Performer
       </a>
 
       <a href="gallery.html"
-         class="btn1 border border-white px-7 py-3 text-xs font-bold uppercase tracking-widest 
+         class="btn1 border border-white px-7 py-3 text-xs font-bold uppercase tracking-widest rounded-xl
                 hover:bg-white hover:text-black hover:scale-105 transition duration-300">
         View Shows
       </a>
@@ -361,7 +366,7 @@
     <!-- CTA -->
     <div class="text-center mt-16">
       <a href="contact.html"
-         class="bg-[#10B981] text-white px-8 py-3 text-xs font-bold uppercase tracking-widest 
+         class="bg-[#10B981] text-white px-8 py-3 rounded-xl text-xs font-bold uppercase tracking-widest 
                 hover:bg-black transition">
         Book Circus Performer
       </a>
@@ -426,17 +431,10 @@
       <div class="mt-8 flex gap-4 flex-wrap">
 
         <a href="contact.html"
-           class="bg-[#10B981] text-white px-8 py-3 text-xs font-bold uppercase tracking-widest 
+           class="bg-[#10B981] text-white px-8 py-3 rounded-xl text-xs font-bold uppercase tracking-widest 
                   hover:bg-black transition flex items-center gap-2">
           <i class="fa-solid fa-calendar-check"></i>
           Book Now
-        </a>
-
-        <a href="gallery.html"
-           class="border border-black px-8 py-3 text-xs font-bold uppercase tracking-widest 
-                  hover:bg-black hover:text-white transition flex items-center gap-2">
-          <i class="fa-solid fa-play"></i>
-          Watch Show
         </a>
 
       </div>
