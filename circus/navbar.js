@@ -35,15 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
     <div id="rightButtons" class="hidden lg:flex items-center gap-3">
-      <button id="themeToggle" class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 hover:border-[#10B981] hover:text-[#10B981] transition-all">
+      <button id="themeToggle" class="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 hover:border-[#10B981] hover:text-[#10B981] transition-all">
         <i class="bi bi-moon-stars"></i>
       </button>
-      <button id="rtlToggle" class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 hover:border-[#10B981] hover:text-[#10B981] font-bold transition-all">
+      <button id="rtlToggle" class="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 hover:border-[#10B981] hover:text-[#10B981] font-bold transition-all">
         <i class="bi bi-globe2"></i>
       </button>
       <div class="h-6 w-[1px] bg-gray-200 mx-2"></div>
-      <a href="login.html" class="bg-white text-[#10B981] border-2 border-[#10B981] px-5 py-2 rounded-lg font-bold text-xs uppercase tracking-widest transition-all">Login</a>
-      <a href="sign.html" class="bg-[#FFD60A] text-black border-2 border-[#FFD60A] px-5 py-2 rounded-lg font-bold text-xs uppercase tracking-widest shadow-md hover:shadow-lg transition-all">Sign Up</a>
+      <a href="login.html" class="bg-white text-[#10B981] border-2 border-[#10B981] px-5 h-10 flex items-center justify-center rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Login</a>
+      <a href="sign.html" class="bg-[#10B981] text-white border-2 border-[#10B981] px-5 h-10 flex items-center justify-center rounded-xl font-bold text-xs uppercase tracking-widest shadow-md hover:shadow-lg transition-all">Sign Up</a>
     </div>
 
     <button id="hamburgerBtn" class="lg:hidden text-3xl text-[#10B981]"><i class="bi bi-list"></i></button>
@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
        <button id="mobile-theme-toggle" class="flex-1 h-12 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-200 text-xl"><i class="bi bi-moon-stars"></i></button>
        <button id="mobile-rtl-toggle" class="flex-1 h-12 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-200 text-xl font-bold"><i class="bi bi-globe2"></i></button>
     </div>
-    <a href="login.html" class="block w-full text-center bg-white text-[#10B981] border-2 border-[#10B981] py-3 rounded-xl font-bold uppercase text-xs tracking-widest">Login</a>
-    <a href="sign.html" class="block w-full text-center bg-[#FFD60A] text-black border-2 border-[#FFD60A] py-3 rounded-xl font-bold uppercase text-xs tracking-widest shadow-md">Sign Up</a>
+    <a href="login.html" class="block w-full h-12 flex items-center justify-center bg-white text-[#10B981] border-2 border-[#10B981] rounded-xl font-bold uppercase text-xs tracking-widest">Login</a>
+    <a href="sign.html" class="block w-full h-12 flex items-center justify-center bg-[#10B981] text-white border-2 border-[#10B981] rounded-xl font-bold uppercase text-xs tracking-widest shadow-md">Sign Up</a>
   </div>
 </div>
 `;
