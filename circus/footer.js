@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div>
        <h1 class="text-2xl tracking-tighter">
       <a href="index.html" class="font-bold uppercase">
-        <span class="text-black">EMERALD</span> <span class="text-[#10B981]">CIRCUS</span>
+        <span class="title text-black">EMERALD</span> <span class="text-[#10B981]">CIRCUS</span>
       </a>
     </h1>
 
