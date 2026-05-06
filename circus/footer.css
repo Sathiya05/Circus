@@ -1,7 +1,4 @@
-[data-theme="dark"] footer div {
-  color: white !important;
-}
-
 [data-theme="dark"] footer {
-  background-color: #29292a !important;
+  background-color: #000000 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
