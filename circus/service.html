@@ -41,6 +41,12 @@
         [data-theme="dark"] section .bg-white,
         [data-theme="dark"] .card {
             background-color: #000000 !important;
+            border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        }
+
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-100 {
+            border-color: rgba(255, 255, 255, 0.1) !important;
         }
 
         [data-theme="dark"] .bg-gradient-to-r {
@@ -64,7 +70,6 @@
         [data-theme="dark"] h4,
         [data-theme="dark"] h5,
         [data-theme="dark"] h6,
-        [data-theme="dark"] span,
         [data-theme="dark"] li,
         [data-theme="dark"] a,
         [data-theme="dark"] label,
@@ -130,12 +135,12 @@
         <!-- Buttons -->
         <div class="flex flex-wrap justify-center lg:justify-start gap-4">
           <a href="service-detail.html"
-             class="bg-[#10B981] text-white px-8 py-3.5 font-bold uppercase text-xs tracking-widest hover:bg-black transition-all">
+             class="bg-[#10B981] text-white px-8 py-3.5 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-black transition-all">
             View More
           </a>
 
           <a href="service-detail.html"
-             class="btn1 border border-gray-900 dark:border-white/20 px-8 py-3.5 font-bold uppercase text-xs tracking-widest hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-all">
+             class="btn1 border border-gray-900 dark:border-white/20 px-8 py-3.5 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-all">
             Explore Services
           </a>
         </div>
@@ -343,11 +348,11 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32 items-center">
             
             <div class="relative">
-                <div class="aspect-[4/5] overflow-hidden bg-gray-100 relative z-10">
+                <div class="aspect-[4/5] overflow-hidden bg-gray-100 relative z-10 rounded-xl">
                     <img src="images/pic9.jpeg" alt="Technical Rigging" class="w-full h-full object-cover transition-all duration-1000">
                 </div>
                 
-                <div class="absolute -bottom-6 -right-6 bg-gray-900 p-8 z-20 shadow-2xl">
+                <div class="absolute -bottom-6 -right-6 bg-gray-900 p-8 z-20 shadow-2xl rounded-xl">
                     <p class="text-[#10B981] text-[9px] font-black uppercase tracking-[0.4em] mb-2">Safety Protocol</p>
                     <p class="text-white text-xs font-bold uppercase tracking-widest leading-relaxed">
                         Full Site Risk <br> Assessment & <br> RAMS Provided.
@@ -409,7 +414,7 @@
 
                 <div class="pt-6">
                     <a href="service-detail.html" class="inline-flex items-center gap-6 group">
-                        <span class="bg-gray-900 text-white px-10 py-5 rounded-sm font-bold uppercase text-[10px] tracking-[0.3em] group-hover:bg-[#10B981] transition-all duration-500">
+                        <span class="bg-gray-900 text-white px-10 py-5 rounded-xl font-bold uppercase text-[10px] tracking-[0.3em] group-hover:bg-[#10B981] transition-all duration-500">
                             Learn More
                         </span>
                     </a>
@@ -475,10 +480,10 @@
             </div>
             
             <div class="flex flex-col sm:flex-row gap-6">
-                <a href="contact.html" class="bg-white text-gray-900 px-10 py-5 rounded-sm font-bold uppercase text-[10px] tracking-widest hover:bg-[#10B981] hover:text-white transition-all">
+                <a href="contact.html" class="bg-white text-gray-900 px-10 py-5 rounded-xl font-bold uppercase text-[10px] tracking-widest hover:bg-[#10B981] hover:text-white transition-all">
                     Start Inquiry
                 </a>
-                <a href="mailto:ops@emeraldcircus.com" class="btn1 border border-white/20 text-white px-10 py-5 rounded-sm font-bold uppercase text-[10px] tracking-widest hover:bg-white hover:text-gray-900 transition-all">
+                <a href="mailto:ops@emeraldcircus.com" class="btn1 border border-white/20 text-white px-10 py-5 rounded-xl font-bold uppercase text-[10px] tracking-widest hover:bg-white hover:text-gray-900 transition-all">
                     Email Operations
                 </a>
             </div>
