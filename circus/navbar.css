@@ -16,6 +16,17 @@ body {
   position: relative;
 }
 
+[data-theme="dark"] .text-black {
+  color: white !important;
+}
+
+[data-theme="dark"] .border-gray-200,
+[data-theme="dark"] .border-gray-100,
+[data-theme="dark"] .border,
+[data-theme="dark"] .border-white {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
 .nav-active::after {
   content: "";
   position: absolute;
@@ -49,7 +60,7 @@ body {
 [data-theme="dark"] #mobileHomeDropdownMenu,
 [data-theme="dark"] #profileMenu {
   background-color: #1a1a1a !important;
-  border-color: #333 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 [data-theme="dark"] #navLinks .group ul a:hover,
@@ -63,6 +74,7 @@ body {
 [data-theme="dark"] #mobileMenu,
 [data-theme="dark"] #mobileMenu .bg-gray-50 {
   background-color: #1a1a1a !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
 @media (max-width: 1441px) {
@@ -231,7 +243,17 @@ body {
 [data-theme="dark"] #mobileMenu .bg-white,
 [data-theme="dark"] #mobileMenu .bg-gray-50 {
   background-color: #1a1a1a !important;
-  border-color: #10B981 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .border-gray-200,
+[data-theme="dark"] .border-gray-100 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] button,
+[data-theme="dark"] .btn {
+  border-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 /* h1{
